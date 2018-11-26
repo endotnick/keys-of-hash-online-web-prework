@@ -1,11 +1,7 @@
 class Hash
   def keys_of(*arguments)
-    keys = []
-    each do |animal, location|
-      if arguments.include?(location)
-        keys << animal
-      end
+    each select |animal, location|
+      arguments.include?(location)
     end
-    keys
   end
 end
