@@ -1,5 +1,5 @@
 class Hash
   def keys_of(*arguments)
-    puts "arguments: #{args}""
+    puts "arguments: #{arguments}"
   end
 end
